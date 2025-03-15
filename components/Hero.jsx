@@ -3,28 +3,29 @@
 import React from "react";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
-
 import { Particles } from "@/components/magicui/particles";
 import { AuroraText } from "@/components/magicui/aurora-text";
+import { InteractiveHoverButton } from "@/components/magicui/interactive-hover-button";
 
 export default function Hero() {
   const { resolvedTheme } = useTheme();
-  const [color, setColor] = useState("#ffffff");
+  const [color, setColor] = useState("#fffcd6");
 
   useEffect(() => {
-    setColor(resolvedTheme === "dark" ? "#ffffff" : "#000000");
+    setColor(resolvedTheme === "dark" ? "#fffcd6" : "#000000");
   }, [resolvedTheme]);
 
   return (
     <div className="relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background">
-      <span
-        className="pointer-events-none z-10 whitespace-pre-wrap text-center text-8xl font-semibold leading-none"
-        color={color}
-      >
+      <span className="pointer-events-none z-10 whitespace-pre-wrap text-center text-8xl font-semibold leading-none text-black dark:text-primary">
         Your Ticket To
         <br />
         <AuroraText>Better Sleep</AuroraText>
       </span>
+      <br />
+      <InteractiveHoverButton className="dark:text-amber-50 hover:text-black">
+        Get Started
+      </InteractiveHoverButton>
       <Particles
         className="absolute inset-0 z-0"
         quantity={100}
