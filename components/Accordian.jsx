@@ -10,14 +10,16 @@ function Accordian() {
   return (
     <Accordion type="single" collapsible className="w-[95%] text-primary">
       <AccordionItem value="item-1">
-        <AccordionTrigger>What does this do?</AccordionTrigger>
+        <AccordionTrigger>What is Dreamr?</AccordionTrigger>
         <AccordionContent>
-          A calculator to find your perfect sleep and wake times.
+          Dream is a tool to help improve your sleep. You can keep track of your
+          sleep with notes and use our calculator to find your scientifically
+          perfect sleep and wake times.
         </AccordionContent>
       </AccordionItem>
       <AccordionItem value="item-2">
-        <AccordionTrigger>Is this free to use?</AccordionTrigger>
-        <AccordionContent>Yes. Of course it's free.</AccordionContent>
+        <AccordionTrigger>Is Dreamr free to use?</AccordionTrigger>
+        <AccordionContent>Yes. Of course it's free!</AccordionContent>
       </AccordionItem>
       <AccordionItem value="item-3">
         <AccordionTrigger>Have any questions?</AccordionTrigger>

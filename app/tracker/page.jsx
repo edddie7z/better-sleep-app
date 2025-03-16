@@ -1,11 +1,11 @@
 import React from "react";
-import CalculateForm from "@/components/CalculateForm";
+import TrackerForm from "@/components/TrackerForm";
 
-export default function Calculate() {
+export default function Tracker() {
   return (
     <div>
       <div className="flex justify-center my-15">
-        <CalculateForm />
+        <TrackerForm />
       </div>
     </div>
   );

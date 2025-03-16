@@ -11,7 +11,7 @@ import { ChevronDownIcon } from "lucide-react";
 import { useState } from "react";
 
 export default function MinuteDropdown() {
-  const [select, setSelect] = useState("Minutes");
+  const [select, setSelect] = useState("");
   const options = ["00", "15", "30", "45"];
 
   const handleSelectChange = (value) => {

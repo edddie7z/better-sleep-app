@@ -11,7 +11,7 @@ import { ChevronDownIcon } from "lucide-react";
 import { useState } from "react";
 
 export default function HourDropdown() {
-  const [select, setSelect] = useState("Hours");
+  const [select, setSelect] = useState("");
   const options = [
     "1",
     "2",

@@ -5,12 +5,14 @@ import MDropdown from "./MDropdown";
 
 function TimeDropdown() {
   return (
-    <div className="flex justify-center items-center gap-2">
-      <HourDropdown />
-      :
-      <MinuteDropdown />
-      <MDropdown />
-    </div>
+    <>
+      <div className="flex justify-center items-center gap-2">
+        <HourDropdown />
+        :
+        <MinuteDropdown />
+        <MDropdown />
+      </div>
+    </>
   );
 }
 

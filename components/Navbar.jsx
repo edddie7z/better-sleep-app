@@ -1,19 +1,27 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import Image from "next/image";
 
 function Navbar() {
+  const [isHovered, setIsHovered] = useState(false);
+
   return (
     <nav className=" border-gray-200 bg-background">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="/" className="flex items-center space-x-5 rtl:space-x-reverse">
-          <Image
-            src="/assets/dreamrLogo2.png"
-            className=""
-            alt="Dreamr Logo"
-            width={45}
-            height={10}
-            unoptimized={true}
-          />
+          <span>
+            <Image
+              src="/assets/dreamrLogo2.png"
+              className=""
+              alt="Dreamr Logo"
+              width={45}
+              height={45}
+              unoptimized={true}
+              onMouseOver={() => setIsHovered(true)}
+              onMouseOut={() => setIsHovered(false)}
+            />
+          </span>
           <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-primary">
             Dreamr
           </span>
@@ -51,6 +59,14 @@ function Navbar() {
                 aria-current="page"
               >
                 Home
+              </a>
+            </li>
+            <li>
+              <a
+                href="/tracker"
+                className="block py-2 px-3 text-xl text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-accent md:p-0 dark:text-primary md:dark:hover:text-accent dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+              >
+                Tracker
               </a>
             </li>
             <li>
