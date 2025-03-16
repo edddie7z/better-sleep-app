@@ -23,9 +23,11 @@ export default function Hero() {
         <AuroraText>Better Sleep</AuroraText>
       </span>
       <br />
-      <InteractiveHoverButton className="dark:text-amber-50 hover:text-black">
-        Get Started
-      </InteractiveHoverButton>
+      <a href="/calculate">
+        <InteractiveHoverButton className="dark:text-amber-50 hover:text-black">
+          Get Started
+        </InteractiveHoverButton>
+      </a>
       <Particles
         className="absolute inset-0 z-0"
         quantity={100}

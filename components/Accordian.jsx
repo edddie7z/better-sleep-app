@@ -23,7 +23,7 @@ function Accordian() {
         <AccordionTrigger>Have any questions?</AccordionTrigger>
         <AccordionContent>
           Contact us through email at{" "}
-          <span className="text-decoration-line: underline hover:text-blue-700">
+          <span className="text-decoration-line: underline hover:text-blue-600">
             customerservice@dreamr.com
           </span>
         </AccordionContent>

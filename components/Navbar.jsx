@@ -7,13 +7,14 @@ function Navbar() {
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="/" className="flex items-center space-x-5 rtl:space-x-reverse">
           <Image
-            src="/assets/dreamrLogo.png"
+            src="/assets/dreamrLogo2.png"
             className=""
             alt="Dreamr Logo"
             width={45}
             height={10}
+            unoptimized={true}
           />
-          <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-amber-50">
+          <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-primary">
             Dreamr
           </span>
         </a>
@@ -46,7 +47,7 @@ function Navbar() {
             <li>
               <a
                 href="/"
-                className="block py-2 px-3 text-xl text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 dark:text-amber-50 md:dark:text-blue-700"
+                className="block py-2 px-3 text-xl text-white bg-blue-700 rounded-sm md:bg-transparent md:text-accent md:p-0 dark:text-primary md:dark:text-accent"
                 aria-current="page"
               >
                 Home
@@ -54,16 +55,16 @@ function Navbar() {
             </li>
             <li>
               <a
-                href="#"
-                className="block py-2 px-3 text-xl text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-amber-50 md:dark:hover:text-blue-700 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                href="/calculate"
+                className="block py-2 px-3 text-xl text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-accent md:p-0 dark:text-primary md:dark:hover:text-accent dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >
-                Calculator
+                Calculate
               </a>
             </li>
             <li>
               <a
-                href="#"
-                className="block py-2 px-3 text-xl text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-amber-50 md:dark:hover:text-blue-700 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                href="/history"
+                className="block py-2 px-3 text-xl text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-accent md:p-0 dark:text-amber-50 md:dark:hover:text-accent dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >
                 History
               </a>
