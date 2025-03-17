@@ -7,7 +7,7 @@ function Navbar() {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <nav className=" border-gray-200 bg-background">
+    <nav className="border-b-2 bg-background">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="/" className="flex items-center space-x-5 rtl:space-x-reverse">
           <span>

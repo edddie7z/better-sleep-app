@@ -42,7 +42,7 @@ const stages = [
   {
     stage: "Stage 4",
     sleepType: "REM",
-    name: "REM Sleep",
+    name: "R",
     duration: "10-60 Minutes",
     description:
       "Characterized by rapid eye movement, increased brain activity, and vivid dreaming. The body experiences temporary muscle paralysis to prevent acting out dreams. This stage is crucial for cognitive function, learning, and emotional regulation.",
@@ -54,7 +54,7 @@ export function CycleTable() {
     <div className="flex flex-col gap-5 text-primary text-3xl font-semibold">
       Stages of a Sleep Cycle
       <Table>
-        <TableCaption>Hover Over Each Stage for a Description</TableCaption>
+        <TableCaption>Hover Over Stages for More Info</TableCaption>
         <TableHeader>
           <TableRow>
             <TableHead className="w-[100px]">Stage</TableHead>
@@ -80,7 +80,10 @@ export function CycleTable() {
                   </TableCell>
                 </TableRow>
               </HoverCardTrigger>
-              <HoverCardContent className="w-80">
+              <HoverCardContent className="w-80 flex flex-col gap-2">
+                <div className="text-primary font-semibold text-xl">
+                  {stage.stage} ({stage.name}):
+                </div>
                 <div className="text-primary">{stage.description}</div>
               </HoverCardContent>
             </HoverCard>
