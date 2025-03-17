@@ -8,7 +8,7 @@ function TrackerForm() {
     <div className="">
       <div className="flex flex-col border-2 py-8 rounded-4xl gap-5 relative overflow-hidden">
         <div className="justify-items-start pl-10 pb-5 text-primary text-3xl font-semibold">
-          New Tracker
+          New Log
         </div>
         <div className="flex flex-row justify-between px-10 gap-10">
           <span className="flex flex-col w-full gap-2">
