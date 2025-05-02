@@ -12,12 +12,12 @@ export default function AnimatedPageWrapper({ children }) {
         animate="animateState"
         exit="exitState"
         transition={{
-          duration: 0.75,
+          duration: 0.7,
         }}
         variants={{
           initialState: {
             opacity: 0,
-            y: 20,
+            y: 15,
           },
           animateState: {
             opacity: 1,
@@ -25,7 +25,7 @@ export default function AnimatedPageWrapper({ children }) {
           },
           exitState: {
             opacity: 0,
-            y: 20,
+            y: 15,
           },
         }}
         className="base-page-size"

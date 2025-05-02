@@ -3,7 +3,6 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
-import AnimatedPageWrapper from "@/components/AnimatedPageWrapper";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,7 +29,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Navbar />
-          <AnimatedPageWrapper>{children}</AnimatedPageWrapper>
+          {children}
           <Footer />
         </ThemeProvider>
       </body>
