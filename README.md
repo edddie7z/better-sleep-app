@@ -1,4 +1,12 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Dreamr: Better Sleep App
+
+A sleep logger and tracker application designed to help you optimize your sleep cycles and improve your overall sleep quality.
+
+## Features
+
+- **Sleep Calculator**: Calculate optimal sleep and wake-up times based on 90-110 minute sleep cycles
+- **Sleep Logger**: Track your sleep patterns and habits over time
+- **Sleep History**: View historical sleep data to identify trends (Coming Soon)
 
 ## Getting Started
 
@@ -14,23 +22,53 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the application.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## How It Works
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Sleep Cycle Optimization
 
-## Learn More
+Sleep occurs in repeating cycles, each lasting about 90 to 110 minutes, moving through different sleep stages before starting over. To wake up feeling refreshed, it's best to wake up at the end of a cycle rather than in the middle of deep sleep.
 
-To learn more about Next.js, take a look at the following resources:
+Dreamr's sleep calculator helps optimize your sleep and wake-up times by aligning them with complete sleep cycles, reducing grogginess and improving overall rest quality.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Key Features
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. **Calculate**: Input your desired bedtime or wake-up time to get recommendations based on complete sleep cycles
+2. **Log**: Track your actual sleep patterns to build a comprehensive sleep history
+3. **Analyze**: Gain insights into your sleep quality and patterns over time (Coming Soon)
 
-## Deploy on Vercel
+## Navigation
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Home**: Introduction to the app and its features
+- **Calculate**: Plan your optimal sleep or wake times based on sleep cycles
+- **Logger**: Record your actual sleep times and quality
+- **History**: View and analyze your sleep patterns over time (Coming Soon)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Technical Details
+
+This application is built using:
+
+- [Next.js](https://nextjs.org) - React framework for the frontend
+- Modern UI components with responsive design
+- Animated page transitions for a smooth user experience
+
+## Deployment
+
+The app can be deployed on the [Vercel Platform](https://vercel.com) or any other hosting service that supports Next.js applications.
+
+```bash
+npm run build
+npm run start
+```
+
+## About Sleep Cycles
+
+A typical sleep cycle consists of four stages:
+
+1. **N1 (Light Sleep)**: The transition from wakefulness to sleep
+2. **N2 (Light Sleep)**: Body temperature drops, heart rate slows
+3. **N3 (Deep Sleep)**: Restorative stage with slow brain waves
+4. **REM Sleep**: Brain activity increases, dreaming occurs
+
+Understanding these cycles helps optimize wake-up times for better alertness and reduced morning grogginess.
