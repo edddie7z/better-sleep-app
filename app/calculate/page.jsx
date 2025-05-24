@@ -31,7 +31,7 @@ export default function Calculate() {
             <CycleTable />
 
             <Image
-              src="/assets/sleepCycle.png"
+              src="/assets/sleep_chart.png"
               className="ml-15"
               alt="Sleep Cycle"
               width={350}
