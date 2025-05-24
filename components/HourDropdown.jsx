@@ -8,10 +8,10 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { ChevronDownIcon } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
-export default function HourDropdown() {
-  const [select, setSelect] = useState("");
+export default function HourDropdown({ value = "", onChange }) {
+  const [select, setSelect] = useState(value);
   const options = [
     "1",
     "2",
@@ -29,13 +29,22 @@ export default function HourDropdown() {
 
   const handleSelectChange = (value) => {
     setSelect(value);
+    if (onChange) {
+      onChange(value);
+    }
   };
+  // Update local state when prop changes
+  useEffect(() => {
+    if (value !== select) {
+      setSelect(value);
+    }
+  }, [value]);
 
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button variant="outline">
-          {select}
+          {select || value}
           <ChevronDownIcon
             className="-me-1 opacity-60"
             size={16}
